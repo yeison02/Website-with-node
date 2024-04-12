@@ -17,18 +17,21 @@
           <h3>Contact me</h3>
         </div>
         <div class="card-body text-star">
-         <form >
-
+         <form action="send_email" method="post">
+         <div class="mb-3">
+            <label for="to" >Para:</label>
+            <input type="email" placeholder="Email" name="to" id="to" class="form-control">
+          </div>
           <div class="mb-3">
-            <label for="email" >Email</label>
-            <input type="email" placeholder="Email" class="form-control">
+            <label for="email" >De:</label>
+            <input type="email" placeholder="Email" name="from" id="from" class="form-control">
           </div>
 
           <div class="mb-3">
-            <label for="mesage" >Message</label>
-            <textarea name="message" rows="3" placeholder="Write a message" class="form-control"></textarea></textarea> 
+            <label for="message" >Mensaje:</label>
+            <textarea name="message" rows="3" placeholder="Escibe tu mensaje" id="message" class="form-control"></textarea></textarea> 
           </div>
-          <button class="btn btn-outline-primary btn-block">Save</button>
+          <input type="submit" value="Send" class="btn btn-outline-primary btn-block">
          </form>
         </div>
       </div>
